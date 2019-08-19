@@ -1,0 +1,1258 @@
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h: In instantiation of ‘bool std::binary_search(_FIter, _FIter, const _Tp&) [with _FIter = const char*; _Tp = std::basic_string<char>]’:
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/detail/classification.hpp:223:76:   required from ‘bool boost::algorithm::detail::is_any_ofF<CharT>::operator()(Char2T) const [with Char2T = std::basic_string<char>; CharT = char]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/detail/finder.hpp:578:45:   required from ‘boost::iterator_range<Iterator> boost::algorithm::detail::token_finderF<PredicateT>::operator()(ForwardIteratorT, ForwardIteratorT) const [with ForwardIteratorT = __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >; PredicateT = boost::algorithm::detail::is_any_ofF<char>]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/concept.hpp:43:28:   required from ‘void boost::algorithm::FinderConcept<FinderT, IteratorT>::constraints() [with FinderT = boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >; IteratorT = __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >]’
+/home/fjp/bin/boost_1_69_bin/include/boost/concept/detail/has_constraints.hpp:32:62:   required by substitution of ‘template<class Model> boost::concepts::detail::yes boost::concepts::detail::has_constraints_(Model*, boost::concepts::detail::wrap_constraints<Model, (& Model:: constraints)>*) [with Model = boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >]’
+/home/fjp/bin/boost_1_69_bin/include/boost/concept/detail/has_constraints.hpp:42:5:   required from ‘const bool boost::concepts::not_satisfied<boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > > >::value’
+/home/fjp/bin/boost_1_69_bin/include/boost/concept/detail/has_constraints.hpp:45:51:   required from ‘struct boost::concepts::not_satisfied<boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > > >’
+/home/fjp/bin/boost_1_69_bin/include/boost/concept/detail/general.hpp:51:8:   required from ‘struct boost::concepts::requirement_<void (*)(boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >)>’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/iter_find.hpp:77:13:   required from ‘SequenceSequenceT& boost::algorithm::iter_split(SequenceSequenceT&, RangeT&, FinderT) [with SequenceSequenceT = std::basic_string<char>; RangeT = std::vector<std::basic_string<char> >; FinderT = boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/split.hpp:149:69:   required from ‘SequenceSequenceT& boost::algorithm::split(SequenceSequenceT&, RangeT&, PredicateT, boost::algorithm::token_compress_mode_type) [with SequenceSequenceT = std::basic_string<char>; RangeT = std::vector<std::basic_string<char> >; PredicateT = boost::algorithm::detail::is_any_ofF<char>]’
+test_split.cpp:19:72:   required from here
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: error: no match for ‘operator<’ (operand types are ‘const std::basic_string<char>’ and ‘const char’)
+       return __i != __last && !(__val < *__i);
+                                       ^
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note: candidates are:
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8.2/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::pair<_T1, _T2>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:1055:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:1055:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::move_iterator<_Iterator>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:1061:5: note: template<class _Iterator> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:1061:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::move_iterator<_Iterator>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   mismatched types ‘const _CharT*’ and ‘char’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   mismatched types ‘const _CharT*’ and ‘std::basic_string<char>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/vector:64:0,
+                 from /usr/include/c++/4.8.2/bits/random.h:34,
+                 from /usr/include/c++/4.8.2/random:50,
+                 from /usr/include/c++/4.8.2/bits/stl_algo.h:65,
+                 from /usr/include/c++/4.8.2/algorithm:62,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8.2/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/tuple:39:0,
+                 from /usr/include/c++/4.8.2/functional:55,
+                 from /usr/include/c++/4.8.2/bits/stl_algo.h:66,
+                 from /usr/include/c++/4.8.2/algorithm:62,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/array:238:5: note: template<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+     ^
+/usr/include/c++/4.8.2/array:238:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::array<_Tp, _Nm>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/functional:55:0,
+                 from /usr/include/c++/4.8.2/bits/stl_algo.h:66,
+                 from /usr/include/c++/4.8.2/algorithm:62,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/tuple:824:5: note: template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator<(const tuple<_TElements...>& __t,
+     ^
+/usr/include/c++/4.8.2/tuple:824:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::tuple<_Elements ...>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/set:60:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:36,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/set:61:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:36,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_set.h:771:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator<(const set<_Key, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_set.h:771:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::set<_Key, _Compare, _Alloc>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/set:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:36,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_multiset.h:756:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator<(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_multiset.h:756:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::multiset<_Key, _Compare, _Alloc>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/map:61:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:37,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/map:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:37,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/memory:81:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/unique_ptr.h:523:5: note: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator<(const unique_ptr<_Tp, _Dp>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/unique_ptr.h:523:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/memory:81:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/unique_ptr.h:534:5: note: template<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+     ^
+/usr/include/c++/4.8.2/bits/unique_ptr.h:534:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/memory:81:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/unique_ptr.h:540:5: note: template<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+     ^
+/usr/include/c++/4.8.2/bits/unique_ptr.h:540:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   cannot convert ‘__val’ (type ‘const std::basic_string<char>’) to type ‘std::nullptr_t’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.8.2/memory:82,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1061:5: note: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator<(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1061:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::__shared_ptr<_Tp1, _Lp>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.8.2/memory:82,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1070:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1070:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.8.2/memory:82,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1075:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1075:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   cannot convert ‘__val’ (type ‘const std::basic_string<char>’) to type ‘std::nullptr_t’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/memory:82:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr.h:359:5: note: template<class _Tp1, class _Tp2> bool std::operator<(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator<(const shared_ptr<_Tp1>& __a,
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr.h:359:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::shared_ptr<_Tp1>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/memory:82:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr.h:368:5: note: template<class _Tp> bool std::operator<(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr.h:368:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::shared_ptr<_Tp1>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/memory:82:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr.h:373:5: note: template<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr.h:373:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   cannot convert ‘__val’ (type ‘const std::basic_string<char>’) to type ‘std::nullptr_t’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/list:63:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/pending/object_cache.hpp:25,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/cpp_regex_traits.hpp:41,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_traits.hpp:39,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/regex_traits.hpp:27,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:39,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_list.h:1631:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::list<_Tp, _Alloc>&, const std::list<_Tp, _Alloc>&)
+     operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8.2/bits/stl_list.h:1631:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::list<_Tp, _Alloc>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/hash.hpp:38:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/functional/hash.hpp:6,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/basic_regex.hpp:23,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:67,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/system_error:177:3: note: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^
+/usr/include/c++/4.8.2/system_error:177:3: note:   no known conversion for argument 1 from ‘const std::basic_string<char>’ to ‘const std::error_code&’
+/usr/include/c++/4.8.2/system_error:250:3: note: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^
+/usr/include/c++/4.8.2/system_error:250:3: note:   no known conversion for argument 1 from ‘const std::basic_string<char>’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/4.8.2/deque:64:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/detail/container_fwd.hpp:91,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/extensions.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/hash.hpp:760,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/functional/hash.hpp:6,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/basic_regex.hpp:23,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:67,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_deque.h:273:5: note: template<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_deque.h:273:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/deque:64:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/detail/container_fwd.hpp:91,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/extensions.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/hash.hpp:760,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/functional/hash.hpp:6,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/basic_regex.hpp:23,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:67,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_deque.h:281:5: note: template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)
+     operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_deque.h:281:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/deque:64:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/detail/container_fwd.hpp:91,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/extensions.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/hash.hpp:760,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/functional/hash.hpp:6,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/basic_regex.hpp:23,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:67,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_deque.h:1975:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)
+     operator<(const deque<_Tp, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_deque.h:1975:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::deque<_Tp, _Alloc>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:836:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:836:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:830:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:830:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2710:39: note:   ‘const std::basic_string<char>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       return __i != __last && !(__val < *__i);
+                                       ^
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h: In instantiation of ‘_ForwardIterator std::lower_bound(_ForwardIterator, _ForwardIterator, const _Tp&) [with _ForwardIterator = const char*; _Tp = std::basic_string<char>]’:
+/usr/include/c++/4.8.2/bits/stl_algo.h:2709:69:   required from ‘bool std::binary_search(_FIter, _FIter, const _Tp&) [with _FIter = const char*; _Tp = std::basic_string<char>]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/detail/classification.hpp:223:76:   required from ‘bool boost::algorithm::detail::is_any_ofF<CharT>::operator()(Char2T) const [with Char2T = std::basic_string<char>; CharT = char]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/detail/finder.hpp:578:45:   required from ‘boost::iterator_range<Iterator> boost::algorithm::detail::token_finderF<PredicateT>::operator()(ForwardIteratorT, ForwardIteratorT) const [with ForwardIteratorT = __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >; PredicateT = boost::algorithm::detail::is_any_ofF<char>]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/concept.hpp:43:28:   required from ‘void boost::algorithm::FinderConcept<FinderT, IteratorT>::constraints() [with FinderT = boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >; IteratorT = __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >]’
+/home/fjp/bin/boost_1_69_bin/include/boost/concept/detail/has_constraints.hpp:32:62:   required by substitution of ‘template<class Model> boost::concepts::detail::yes boost::concepts::detail::has_constraints_(Model*, boost::concepts::detail::wrap_constraints<Model, (& Model:: constraints)>*) [with Model = boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >]’
+/home/fjp/bin/boost_1_69_bin/include/boost/concept/detail/has_constraints.hpp:42:5:   required from ‘const bool boost::concepts::not_satisfied<boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > > >::value’
+/home/fjp/bin/boost_1_69_bin/include/boost/concept/detail/has_constraints.hpp:45:51:   required from ‘struct boost::concepts::not_satisfied<boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > > >’
+/home/fjp/bin/boost_1_69_bin/include/boost/concept/detail/general.hpp:51:8:   required from ‘struct boost::concepts::requirement_<void (*)(boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >)>’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/iter_find.hpp:77:13:   required from ‘SequenceSequenceT& boost::algorithm::iter_split(SequenceSequenceT&, RangeT&, FinderT) [with SequenceSequenceT = std::basic_string<char>; RangeT = std::vector<std::basic_string<char> >; FinderT = boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/split.hpp:149:69:   required from ‘SequenceSequenceT& boost::algorithm::split(SequenceSequenceT&, RangeT&, PredicateT, boost::algorithm::token_compress_mode_type) [with SequenceSequenceT = std::basic_string<char>; RangeT = std::vector<std::basic_string<char> >; PredicateT = boost::algorithm::detail::is_any_ofF<char>]’
+test_split.cpp:19:72:   required from here
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: error: no match for ‘operator<’ (operand types are ‘const char’ and ‘const std::basic_string<char>’)
+    if (*__middle < __val)
+                  ^
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note: candidates are:
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8.2/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:1055:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:1055:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::move_iterator<_Iterator>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:1061:5: note: template<class _Iterator> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:1061:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::move_iterator<_Iterator>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const _CharT*’ and ‘char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/vector:64:0,
+                 from /usr/include/c++/4.8.2/bits/random.h:34,
+                 from /usr/include/c++/4.8.2/random:50,
+                 from /usr/include/c++/4.8.2/bits/stl_algo.h:65,
+                 from /usr/include/c++/4.8.2/algorithm:62,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8.2/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::vector<_Tp, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/tuple:39:0,
+                 from /usr/include/c++/4.8.2/functional:55,
+                 from /usr/include/c++/4.8.2/bits/stl_algo.h:66,
+                 from /usr/include/c++/4.8.2/algorithm:62,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/array:238:5: note: template<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+     ^
+/usr/include/c++/4.8.2/array:238:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::array<_Tp, _Nm>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/functional:55:0,
+                 from /usr/include/c++/4.8.2/bits/stl_algo.h:66,
+                 from /usr/include/c++/4.8.2/algorithm:62,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:33,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/tuple:824:5: note: template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator<(const tuple<_TElements...>& __t,
+     ^
+/usr/include/c++/4.8.2/tuple:824:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::tuple<_Elements ...>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/set:60:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:36,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/set:61:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:36,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_set.h:771:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator<(const set<_Key, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_set.h:771:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::set<_Key, _Compare, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/set:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:36,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_multiset.h:756:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator<(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_multiset.h:756:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::multiset<_Key, _Compare, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/map:61:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:37,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::map<_Key, _Tp, _Compare, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/map:62:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:37,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/memory:81:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/unique_ptr.h:523:5: note: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator<(const unique_ptr<_Tp, _Dp>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/unique_ptr.h:523:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/memory:81:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/unique_ptr.h:534:5: note: template<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+     ^
+/usr/include/c++/4.8.2/bits/unique_ptr.h:534:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/memory:81:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/unique_ptr.h:540:5: note: template<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+     ^
+/usr/include/c++/4.8.2/bits/unique_ptr.h:540:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   cannot convert ‘* __middle’ (type ‘const char’) to type ‘std::nullptr_t’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.8.2/memory:82,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1061:5: note: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator<(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1061:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::__shared_ptr<_Tp1, _Lp>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.8.2/memory:82,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1070:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1070:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::__shared_ptr<_Tp, _Lp>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.8.2/memory:82,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1075:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr_base.h:1075:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   cannot convert ‘* __middle’ (type ‘const char’) to type ‘std::nullptr_t’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/memory:82:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr.h:359:5: note: template<class _Tp1, class _Tp2> bool std::operator<(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator<(const shared_ptr<_Tp1>& __a,
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr.h:359:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::shared_ptr<_Tp1>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/memory:82:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr.h:368:5: note: template<class _Tp> bool std::operator<(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr.h:368:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::shared_ptr<_Tp1>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/memory:82:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/smart_ptr/scoped_ptr.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/scoped_ptr.hpp:13,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_workaround.hpp:42,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:32,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/shared_ptr.h:373:5: note: template<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^
+/usr/include/c++/4.8.2/bits/shared_ptr.h:373:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   cannot convert ‘* __middle’ (type ‘const char’) to type ‘std::nullptr_t’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/list:63:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/pending/object_cache.hpp:25,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/cpp_regex_traits.hpp:41,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex_traits.hpp:39,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/regex_traits.hpp:27,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:39,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_list.h:1631:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::list<_Tp, _Alloc>&, const std::list<_Tp, _Alloc>&)
+     operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8.2/bits/stl_list.h:1631:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::list<_Tp, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/hash.hpp:38:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/functional/hash.hpp:6,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/basic_regex.hpp:23,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:67,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/system_error:177:3: note: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^
+/usr/include/c++/4.8.2/system_error:177:3: note:   no known conversion for argument 1 from ‘const char’ to ‘const std::error_code&’
+/usr/include/c++/4.8.2/system_error:250:3: note: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^
+/usr/include/c++/4.8.2/system_error:250:3: note:   no known conversion for argument 1 from ‘const char’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/4.8.2/deque:64:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/detail/container_fwd.hpp:91,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/extensions.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/hash.hpp:760,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/functional/hash.hpp:6,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/basic_regex.hpp:23,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:67,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_deque.h:273:5: note: template<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_deque.h:273:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/deque:64:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/detail/container_fwd.hpp:91,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/extensions.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/hash.hpp:760,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/functional/hash.hpp:6,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/basic_regex.hpp:23,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:67,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_deque.h:281:5: note: template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)
+     operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_deque.h:281:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/deque:64:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/detail/container_fwd.hpp:91,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/extensions.hpp:22,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/container_hash/hash.hpp:760,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/functional/hash.hpp:6,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/basic_regex.hpp:23,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex/v4/regex.hpp:67,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/regex.hpp:31,
+                 from test_split.cpp:2:
+/usr/include/c++/4.8.2/bits/stl_deque.h:1975:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)
+     operator<(const deque<_Tp, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8.2/bits/stl_deque.h:1975:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const std::deque<_Tp, _Alloc>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:836:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:836:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /usr/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_iterator.h:830:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/usr/include/c++/4.8.2/bits/stl_iterator.h:830:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /usr/include/c++/4.8.2/ios:40,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from test_split.cpp:1:
+/usr/include/c++/4.8.2/bits/stl_algobase.h:965:18: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’ and ‘const char’
+    if (*__middle < __val)
+                  ^
+In file included from /home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/iter_find.hpp:19:0,
+                 from /home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/split.hpp:16,
+                 from test_split.cpp:3:
+/home/fjp/bin/boost_1_69_bin/include/boost/range/iterator_range_core.hpp: In instantiation of ‘SeqT boost::copy_range(const Range&) [with SeqT = char; Range = boost::iterator_range<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >]’:
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/detail/util.hpp:98:50:   required from ‘SeqT boost::algorithm::detail::copy_iterator_rangeF<SeqT, IteratorT>::operator()(const boost::iterator_range<Iterator2T>&) const [with SeqT = char; IteratorT = __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >]’
+/home/fjp/bin/boost_1_69_bin/include/boost/iterator/transform_iterator.hpp:126:31:   required from ‘typename boost::iterators::detail::transform_iterator_base<UnaryFunc, Iterator, Reference, Value>::type::reference boost::iterators::transform_iterator<UnaryFunction, Iterator, Reference, Value>::dereference() const [with UnaryFunc = boost::algorithm::detail::copy_iterator_rangeF<char, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >; Iterator = boost::algorithm::split_iterator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >; Reference = boost::iterators::use_default; Value = boost::iterators::use_default; typename boost::iterators::detail::transform_iterator_base<UnaryFunc, Iterator, Reference, Value>::type::reference = char]’
+/home/fjp/bin/boost_1_69_bin/include/boost/iterator/iterator_facade.hpp:550:32:   required from ‘static typename Facade::reference boost::iterators::iterator_core_access::dereference(const Facade&) [with Facade = boost::iterators::transform_iterator<boost::algorithm::detail::copy_iterator_rangeF<char, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::algorithm::split_iterator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::iterators::use_default, boost::iterators::use_default>; typename Facade::reference = char]’
+/home/fjp/bin/boost_1_69_bin/include/boost/iterator/iterator_facade.hpp:656:69:   required from ‘boost::iterators::detail::iterator_facade_base<Derived, Value, CategoryOrTraversal, Reference, Difference, false, false>::reference boost::iterators::detail::iterator_facade_base<Derived, Value, CategoryOrTraversal, Reference, Difference, false, false>::operator*() const [with Derived = boost::iterators::transform_iterator<boost::algorithm::detail::copy_iterator_rangeF<char, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::algorithm::split_iterator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::iterators::use_default, boost::iterators::use_default>; Value = char; CategoryOrTraversal = boost::iterators::forward_traversal_tag; Reference = char; Difference = long int; boost::iterators::detail::iterator_facade_base<Derived, Value, CategoryOrTraversal, Reference, Difference, false, false>::reference = char]’
+/usr/include/c++/4.8.2/bits/basic_string.tcc:90:23:   required from ‘static _CharT* std::basic_string<_CharT, _Traits, _Alloc>::_S_construct(_InIterator, _InIterator, const _Alloc&, std::input_iterator_tag) [with _InIterator = boost::iterators::transform_iterator<boost::algorithm::detail::copy_iterator_rangeF<char, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::algorithm::split_iterator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::iterators::use_default, boost::iterators::use_default>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+/usr/include/c++/4.8.2/bits/basic_string.h:1725:56:   required from ‘static _CharT* std::basic_string<_CharT, _Traits, _Alloc>::_S_construct_aux(_InIterator, _InIterator, const _Alloc&, std::__false_type) [with _InIterator = boost::iterators::transform_iterator<boost::algorithm::detail::copy_iterator_rangeF<char, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::algorithm::split_iterator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::iterators::use_default, boost::iterators::use_default>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+/usr/include/c++/4.8.2/bits/basic_string.h:1746:58:   required from ‘static _CharT* std::basic_string<_CharT, _Traits, _Alloc>::_S_construct(_InIterator, _InIterator, const _Alloc&) [with _InIterator = boost::iterators::transform_iterator<boost::algorithm::detail::copy_iterator_rangeF<char, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::algorithm::split_iterator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::iterators::use_default, boost::iterators::use_default>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+/usr/include/c++/4.8.2/bits/basic_string.tcc:229:49:   required from ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(_InputIterator, _InputIterator, const _Alloc&) [with _InputIterator = boost::iterators::transform_iterator<boost::algorithm::detail::copy_iterator_rangeF<char, __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::algorithm::split_iterator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, boost::iterators::use_default, boost::iterators::use_default>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/iter_find.hpp:178:49:   required from ‘SequenceSequenceT& boost::algorithm::iter_split(SequenceSequenceT&, RangeT&, FinderT) [with SequenceSequenceT = std::basic_string<char>; RangeT = std::vector<std::basic_string<char> >; FinderT = boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> >]’
+/home/fjp/bin/boost_1_69_bin/include/boost/algorithm/string/split.hpp:149:69:   required from ‘SequenceSequenceT& boost::algorithm::split(SequenceSequenceT&, RangeT&, PredicateT, boost::algorithm::token_compress_mode_type) [with SequenceSequenceT = std::basic_string<char>; RangeT = std::vector<std::basic_string<char> >; PredicateT = boost::algorithm::detail::is_any_ofF<char>]’
+test_split.cpp:19:72:   required from here
+/home/fjp/bin/boost_1_69_bin/include/boost/range/iterator_range_core.hpp:874:61: error: expression list treated as compound expression in functional cast [-fpermissive]
+             return SeqT( boost::begin( r ), boost::end( r ) );
+                                                             ^
+/home/fjp/bin/boost_1_69_bin/include/boost/range/iterator_range_core.hpp:874:61: error: invalid cast from type ‘boost::range_detail::extract_const_iterator<boost::iterator_range<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > >, true>::type {aka __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >}’ to type ‘char’
