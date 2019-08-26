@@ -13,7 +13,7 @@ ServerFrame::ServerFrame(const string &setting, const string &exp)
 ServerFrame::~ServerFrame() {}
 
 void ServerFrame::Init() {
-    server = new CServer(m_config);
+    server = new CServerWork(m_config);
     ASSERT_NOT_NULL(server);
 }
 
@@ -29,7 +29,6 @@ void ServerFrame::Run() {
 void ServerFrame::StartService() {
     int n = 0;
     string host = "0.0.0.0";
-    //string port = "9999";
     string root_path = "./wwwroot";
     
     //while(true){

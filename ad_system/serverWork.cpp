@@ -1,17 +1,17 @@
-#include "server.hpp"
+#include "serverWork.hpp"
 
 namespace server {
 
-CServer::CServer(globalConfig &config)
+CServerWork::CServerWork(globalConfig &config)
  : m_config(config){
 	Init();	
 }
-CServer::~CServer() {}
+CServerWork::~CServerWork() {}
 
-void CServer::Init() {
+void CServerWork::Init() {
     INFO("CServer::Init");
 }
-bool CServer::Work(const string& in, string& out) {
+bool CServerWork::Work(const string& in, string& out) {
 	if (m_config.enable_print_request) {
     	LOG(INFO)<<"CServer::Work start>> "<< in;
 	}

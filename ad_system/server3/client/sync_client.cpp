@@ -32,7 +32,8 @@ int main(int argc, char* argv[])
 
     // Get a list of endpoints corresponding to the server name.
     tcp::resolver resolver(io_context);
-    tcp::resolver::results_type endpoints = resolver.resolve(argv[1], "http");
+    //tcp::resolver::results_type endpoints = resolver.resolve(argv[1], "http");
+    tcp::resolver::results_type endpoints = resolver.resolve(argv[1],"9999");
 
     // Try each endpoint until we successfully establish a connection.
     tcp::socket socket(io_context);

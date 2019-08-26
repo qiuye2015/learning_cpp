@@ -1,7 +1,7 @@
  #pragma once
 #include "common/globalHelper.hpp"
 #include "globalConfig.hpp"
-#include "server.hpp"
+#include "serverWork.hpp"
 
 using std::string;
 
@@ -16,7 +16,7 @@ private:
 	void Init();
 	void StartService();
 private:
-	CServer *server;
+	CServerWork *server;
 	boost::thread *server_thread;
 	http::server3::server *s;
     globalConfig m_config;

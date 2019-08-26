@@ -6,11 +6,11 @@ using std::string;
 
 namespace server {
 
-class CServer: public http::CoreWorkInterface
+class CServerWork: public http::CoreWorkInterface
 {
 public:
-	CServer(globalConfig &config);
-	~CServer();
+	CServerWork(globalConfig &config);
+	~CServerWork();
 	/* http_server的回调函数 */ 
 	virtual bool Work(const string& in, string& out) override; 	
 private:

@@ -21,13 +21,15 @@ class client
 {
 public:
   client(boost::asio::io_context& io_context,
-      const std::string& server, const std::string& path)
+      const std::string& server, const std::string& port, 
+      const std::string& path)
     : resolver_(io_context),
       socket_(io_context)
   {
     // Form the request. We specify the "Connection: close" header so that the
     // server will close the socket after transmitting the response. This will
     // allow us to treat all data up until the EOF as the content.
+    //形成请求。 我们指定“Connection:close”标头，以便服务器在传输响应后关闭套接字。 这将允许我们将所有数据视为EOF作为内容。
     std::ostream request_stream(&request_);
     request_stream << "GET " << path << " HTTP/1.0\r\n";
     request_stream << "Host: " << server << "\r\n";
@@ -36,7 +38,8 @@ public:
 
     // Start an asynchronous resolve to translate the server and service names
     // into a list of endpoints.
-    resolver_.async_resolve(server, "http",
+    tcp::resolver::query query(server, port);
+    resolver_.async_resolve(query,
         boost::bind(&client::handle_resolve, this,
           boost::asio::placeholders::error,
           boost::asio::placeholders::results));
@@ -183,16 +186,16 @@ int main(int argc, char* argv[])
 {
   try
   {
-    if (argc != 3)
+    if (argc != 4)
     {
-      std::cout << "Usage: async_client <server> <path>\n";
+      std::cout << "Usage: async_client <server> <port> <path>\n";
       std::cout << "Example:\n";
       std::cout << "  async_client www.boost.org /LICENSE_1_0.txt\n";
       return 1;
     }
 
     boost::asio::io_context io_context;
-    client c(io_context, argv[1], argv[2]);
+    client c(io_context, argv[1], argv[2], argv[3]);
     io_context.run();
   }
   catch (std::exception& e)
