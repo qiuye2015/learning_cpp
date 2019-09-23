@@ -1,0 +1,3 @@
+/home/work/fjp/test/learning_cpp/boost/serialization/build/CMakeFiles/rebuild_cache.dir
+/home/work/fjp/test/learning_cpp/boost/serialization/build/CMakeFiles/http_server.dir
+/home/work/fjp/test/learning_cpp/boost/serialization/build/CMakeFiles/edit_cache.dir
