@@ -27,26 +27,26 @@ namespace globalHelper {
 #define ASSERT_NOT_NULL(x) if(!x) {LOG(FATAL) << #x << " is NULL!";} 
 /**************读写ini格式文件***********/
 int GetIntInSettingFile(const string& frameName,
-						const string& paraName,
-						int defaultParaValue,
-						const string& settingFileName);
+                        const string& paraName,
+                        int defaultParaValue,
+                        const string& settingFileName);
 string ReadStringFromIniFile(const string&iniFileName, 
-							 const string& ref_desFrameName, 
-							 const string& ref_desItemName, 
-							 uint max_len = 2048);
+                             const string& ref_desFrameName, 
+                             const string& ref_desItemName, 
+                             uint max_len = 2048);
 
 template<typename T>
 bool getValue(const string &cfg, const string &section,
-			  const string &key, T &value){
-	string str_value = ReadStringFromIniFile(cfg, section, key);
-	if(str_value == "") return false;
-	try {
-		value = boost::lexical_cast<T>(str_value);
-	}
-	catch(...) {
-		return false;
-	}
-	return true;
+              const string &key, T &value){
+    string str_value = ReadStringFromIniFile(cfg, section, key);
+    if(str_value == "") return false;
+    try {
+        value = boost::lexical_cast<T>(str_value);
+    }
+    catch(...) {
+        return false;
+    }
+    return true;
 }
 /**************时间日期相关*************/
 // 返回当前时间 形式如：1980-11-17 10:00

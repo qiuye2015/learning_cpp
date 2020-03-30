@@ -5,24 +5,24 @@ template<class T>
 class SingleTon
 {
 public:
-	static T* Instance()
-	{
-		if (m_self == nullptr)
-		{
-			m_self = new T;
-		}
+    static T* Instance()
+    {
+        if (m_self == nullptr)
+        {
+            m_self = new T;
+        }
 
-		return m_self;
-	}
+        return m_self;
+    }
 
-
-private:
-	static T *m_self;
 
 private:
-	SingleTon<T>(const SingleTon<T>& anOther);
-	SingleTon<T>& operator=(const SingleTon<T>& anOther);
-	~SingleTon<T>();
+    static T *m_self;
+
+private:
+    SingleTon<T>(const SingleTon<T>& anOther);
+    SingleTon<T>& operator=(const SingleTon<T>& anOther);
+    ~SingleTon<T>();
 };
 
 

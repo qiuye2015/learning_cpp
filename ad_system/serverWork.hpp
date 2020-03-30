@@ -9,12 +9,12 @@ namespace server {
 class CServerWork: public http::CoreWorkInterface
 {
 public:
-	CServerWork(globalConfig &config);
-	~CServerWork();
-	/* http_server的回调函数 */ 
-	virtual bool Work(const string& in, string& out) override; 	
+    CServerWork(globalConfig &config);
+    ~CServerWork();
+    /* http_server的回调函数 */ 
+    virtual bool Work(const string& in, string& out) override;
 private:
-	void Init();
+    void Init();
     globalConfig &m_config;
 };
 }//namespace server 

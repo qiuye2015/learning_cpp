@@ -24,19 +24,19 @@ void ServerFrame::Run() {
     /* 走不到 */
     delete server_thread; 
     server_thread = NULL;
-}	
+}
 
 void ServerFrame::StartService() {
     int n = 0;
     string host = "0.0.0.0";
     string root_path = "./wwwroot";
-    
+
     //while(true){
         try {
-            s = new http::server3::server(host, 
-                m_config.service_port, 
-                root_path, 
-                m_config.service_thread_num, 
+            s = new http::server3::server(host,
+                m_config.service_port,
+                root_path,
+                m_config.service_thread_num,
                 "txt");
         }
         catch(...) {
