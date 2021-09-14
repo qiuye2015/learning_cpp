@@ -51,6 +51,7 @@ void mydaemond(){
     // 关闭文件描述符
     close(STDIN_FILENO);
     int fd0 = open("/dev/null",O_RDWR);//fd = 0(STDIN_FILENO)
+	//使newfd成为oldfd的副本 int dup2(int oldfd, int newfd);
     dup2(fd0,STDOUT_FILENO);
     dup2(fd0,STDERR_FILENO);
 }
